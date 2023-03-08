@@ -1,3 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.4;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
 .header {
     background-image: url(../imgs/header.jpg);
     background-size: cover;
@@ -11,19 +28,16 @@
 .overlay {
     background-color: rgba(0, 0, 0, .51);
     width: 100%;
-    height: 100%;
 }
 
 .violet-overlay {
     background-color: rgba(189, 140, 191, .51);
     width: 100%;
-    height: 100%;
     padding-top: 5rem  0;
 }
 
 .white-overlay {
-    background-color: rgba(255, 255, 255, .7);
-    height: 100%;
+    background-color: #8d8d8d;
     width: 100%;
 }
 .navbar {
@@ -59,9 +73,9 @@
 
 .navbar form input {
     padding: 5px 10px;
-    border: 1px solid #b7b5b5;
-    background-color: #e6e3e3;
-    width: 100%;
+    border: none;
+    background-color: #8d8d8d;
+    width: 20%;
 }
 
 .header{
@@ -76,6 +90,18 @@
     display: grid;
     gap: 3rem;
 }
+.overlay__title button{
+    margin: 0 auto;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #ef44f8;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* about__us */
+
 .about__us {
     position: relative;
     padding: 100px 0;
@@ -90,10 +116,10 @@
 .about__us .container p div {
     padding: 70px 0;
     background-color: white;
-    box-shadow: 5px 5px 10px #d2cfcf, -5px -5px 10px #d2cfcf;
+    box-shadow: 5px 5px 10px #8d8d8d, -5px -5px 10px #8d8d8d;
 }
 
-.about__us .container p div h4 {
+.about__us .container p + div > h4 {
     margin-bottom: 40px
 }
 
@@ -102,9 +128,17 @@
     width: 80%;
     float: right;
 }
+.about__us .container .text-right button{
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    background-color: #e651ee;
+    color: azure;
+    opacity: 0.7;
+}
 
-.about__us .container p div button {
-    background-color: #bd8cbf;
+.about__us .container p + div > button {
+    background-color: #8d8d8d;
     border: none;
 }
 
@@ -118,7 +152,7 @@
     width: 200px;
     position: absolute;
     color: white;
-    background-color: #504850;
+    background-color: #8d8d8d;
 }
 
 .about__us .item p {
@@ -142,14 +176,14 @@
     left: 405px;
     bottom: 115px;
     z-index: 2;
-    box-shadow: -2px 2px 10px #5d5959;
+    box-shadow: -2px 2px 10px #8d8d8d;
 }
 
 .about__us .item:nth-of-type(2) {
     left: 105px;
     bottom: 115px;
     z-index: 2;
-    box-shadow: 2px 2px 10px #5d5959;
+    box-shadow: 2px 2px 10px #8d8d8d;
 }
 
 .about__us .item:nth-of-type(3) {
@@ -174,7 +208,7 @@
     width: 100px;
     height: 200px;
     position: absolute;
-    background-color: #5f585f;
+    background-color: #8d8d8d;
     top: 140px;
     z-index: -5;
 }
@@ -183,7 +217,7 @@
     width: 100px;
     height: 200px;
     position: absolute;
-    background-color: #666566;
+    background-color: #8d8d8d;
     bottom: 58px;
     right: 34px;
     z-index: -5;
@@ -192,15 +226,16 @@
 .about__us .row .item:nth-of-type(3) div {
     position: relative;
     z-index: 5;
-    background-color: #8d898d;
+    background-color: #8d8d8d;
     padding: 5px;
 }
 
 /* services */
 
 .services {
-    margin-bottom: 100px;
+    margin-bottom: 8rem;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 2rem;
 }
 
 .services .slide {
@@ -244,16 +279,22 @@
 .services i {
     color: #bd8cbf;
 }
+
 /* agency */
+
 .agency {
     background-image: url('../imgs/agency.jpg');
     font-family: 'Open Sans', sans-serif;
     background-size: cover;
+    padding-top: 3rem;
 }
 .xuyyo{
     margin: 0 auto;
-    width: 86%;
+    width: 100%;
     margin-bottom: 30px;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .overfoolow {
@@ -263,10 +304,6 @@
 .vabshe{
     display: inline-block;
     position: relative
-}
-.vabshe img {
-    width: 500px;
-    margin: 0 20px;
 }
 
 .agency img:first-of-type, .agency img:last-of-type {
@@ -307,6 +344,7 @@
 .contact {
     background-image: url('../imgs/contact.jpg');
     background-size: cover;
+    padding-bottom: 3rem;
 }
 
 .contact h2 {
@@ -314,7 +352,7 @@
     margin-bottom: 30px;
 }
 
-.contact .contact-form {
+.contact .contact_form {
     width: 50%;
     margin: 0 auto;
 }
@@ -326,9 +364,9 @@
     padding: 5px 10px;
 }
 
-.contact form input{
+.contact input{
     border-radius: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
 
 .contact form textarea {
@@ -339,10 +377,8 @@
 }
 
 .contact form input[type="submit"] {
-    width: 130px;
-    height: 40px;
-    padding: 0;
-    line-height: 40px;
+    width: 30%;
+    padding: 1rem 1rem;
     background-color: #ef44f8;
     color: white;
     margin: 0 auto;
@@ -365,13 +401,13 @@ footer a:hover {
     color: #bd8cbf
 }
 
-footer .container > ul {
+footer .container  ul {
     overflow: hidden;
     margin: 30px 0;
     padding-left: 0;
 }
 
-footer .container > ul li {
+footer .container ul +  li {
     float: left;
     padding-right: 25px;
 }
@@ -389,7 +425,7 @@ footer .item ul {
     padding-left: 0;
 }
 
-footer .item ul li {
+footer .item ul + li {
     margin-bottom: 3px;
     font-size: 16px;
 }
