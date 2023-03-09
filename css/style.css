@@ -122,6 +122,9 @@ img{
 .about__us .container p + div > h4 {
     margin-bottom: 40px
 }
+.text-right{
+    display: block;
+}
 
 .about__us .container .text-right p {
     margin-bottom: 40px;
@@ -342,9 +345,11 @@ img{
 /* contact  */
 
 .contact {
+    width: 100%;
+    height: 100%;
+    position: relative;
     background-image: url('../imgs/contact.jpg');
     background-size: cover;
-    padding-bottom: 3rem;
 }
 
 .contact h2 {
